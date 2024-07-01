@@ -14,18 +14,21 @@
     border-collapse: collapse;
     margin-top: 20px;
   }
-  table, th, td {
-    border: 1px solid #ccc;
-  }
   th, td {
-    padding: 10px;
+    width: calc(100% / 7); /* Ensure each cell takes up 1/7th of the table width */
+    height: 60px; /* Set a fixed height for each cell */
+    border: 1px solid #ccc;
     text-align: center;
+    vertical-align: middle;
+    padding: 0;
   }
   th {
     background-color: #f2f2f2;
+    height: auto; /* Allow header cells to adjust to content */
   }
   td {
     cursor: pointer;
+    font-size: 14px; /* Adjust font size as needed */
   }
 </style>
 </head>
